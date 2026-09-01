@@ -1,6 +1,6 @@
 # minecraft-remote-protocol
 
-Minecraft Remote Protocolの実行可能投影とshared conformance fixtureを所有する公開repositoryです。
+Minecraft Remote Protocol移管候補として作成され、現在park中の公開bootstrap repositoryです。現行ownerではありません。
 
 ## McRemote SSOT
 
@@ -38,9 +38,10 @@ SSOT repositoryへアクセスできない場合は作業を止め、その旨�
 
 ## Repository固有の指示
 
-- 本repositoryはhuman-readable Protocol SSOTではなく、批准済みcontractのexecutable projection／fixture ownerです。
-- wireの意味、method、reason、versionを独自判断で追加・変更しません。必要ならknowledgeの人間レビューへ戻します。
-- fixture変更ではowner commit、path、bytes、SHA-256、case ID ledger、predecessorからのsemantic diffを返します。
+- park中はcontract、fixture、package、tooling、consumer参照を変更しません。
+- 現行のexecutable projection／shared fixture ownerは`Naohiro2g/scratch-editor:mc-remote/protocol`です。
+- 本repositoryからsuccessor fixture、package、releaseを発行せず、b7 release inputとして扱いません。
+- post-b7の人間レビューでProtocol、conformance、WireScope、Bridge、TCP／browser接続を一体評価するまで移管作業を再開しません。
 - consumer固有実装、Scratch block、McRemote handler、Python／Java Client APIを本repositoryへ移しません。
 - packageは別途批准されるまでprivateのままにし、npmへpublishしません。
 - secret、private endpoint、credential、UUIDの実値をsource、fixture、logへ残しません。
